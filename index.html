@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Підготовка до ЗНО</title>
+    <p id="info"><b>Цей сейт допоможе Вам підготуватися до ЗНО!</b></p>
+    <hr>
+    <h1 id="title">Головна сторінка</h1>
+    <p a href="#" id="pg1"><b>Головна сторінка</b></p>
+    <p id="pg2"><b>Підготовка до ЗНО</b> </p>
+    <ul id="sublist">
+    </ul>
+    <p><i id="subs">Показати предмети</i> </p>
+    <script type="text/javascript">
+      var a=document.createElement('li');
+      var b=document.createElement('li');
+      var sub1=document.createTextNode('Математика');
+      var sub2=document.createTextNode("Англійська мова");
+      document.getElementById("subs").onclick= function (el){
+        if (document.getElementById("subs").innerHTML == "Показати предмети"){
+           a.appendChild(sub1);
+           document.getElementById("sublist").appendChild(a);
+           b.appendChild(sub2);
+           document.getElementById("sublist").appendChild(b);
+          document.getElementById("subs").innerHTML="Сховати предмети";
+        } else  if (document.getElementById("subs").innerHTML == "Сховати предмети"){
+          document.getElementById("sublist").removeChild(a);
+          document.getElementById("sublist").removeChild(b);
+          document.getElementById("subs").innerHTML="Показати предмети";
+        }
+      }
+    </script>
+    <p a href="#" id="pg3"><b>Відео для більш детальної підготовки</b></p>
+  </header>
+  <body>
+    <hr>
+    <div id="use">
+      <p id="about">Як працювати з сайтом:</p>
+      <ol>
+        <li>Якщо Ви хочете підготуватися з нуля, передивіться відео за посиланням у головному меню</li>
+        <li>Виберіть предмет</li>
+        <li>Пройдіть тест (Увага! Тести на цьому сайті були взяті з ЗНО 2018 року)</li>
+        <li>По закінченню тесту Вам буде виданий бал. Це ваш приблизний бал на ЗНО</li>
+      </ol>
+    </div>
+  <style type="text/css">
+    header {
+  background-color: lightblue;
+}
+#subs{
+  color: #DC143C;
+}
+#title{
+  text-align:center;
+}
+#info{
+  text-align: center;
+  font-size: 30px;
+}
+#about{
+  text-align: center;
+  font-size: 35px;
+  color: #800080;
+}
+
+#use{
+  background-color: yellow;
+}
+html{
+  background-color: crimson;
+}
+  </script>
+  </body>
+</html>
+
