@@ -12,13 +12,13 @@
     <p><i id="subs">Показати предмети</i> </p>
     <script type="text/javascript">
       document.getElementById("subs").onclick=function(el){
-        if(document.getElementById("sub1").font-size == "20px"){
-        document.getElementById("sub1").font-size = "0px";
-        document.getElementById("sub2").font-size = "0px"
+        if(document.getElementById("sub1").style.font-size == "20px"){
+        document.getElementById("sub1").style.fontSize = "0px";
+        document.getElementById("sub2").style.fontSize = "0px"
         }
         else{
-        document.getElementById("sub1").font-size = "20px"
-        document.getElementById("sub2").font-size = "20px"
+        document.getElementById("sub1").style.fontSize = "20px"
+        document.getElementById("sub2").style.fontSize = "20px"
         }
       }
       </script>
@@ -62,10 +62,10 @@ html{
   background-color: crimson;
 }
 #sub1{
-  font-size: 20px;
+  fontSize: 20px;
 }
 #sub2{
-  font-size: 20px;
+  fontSize: 20px;
 }
   </script>
   </body>
