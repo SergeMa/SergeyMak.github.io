@@ -7,25 +7,18 @@
     <h1 id="title">Головна сторінка</h1>
     <p a href="#" id="pg1"><b>Головна сторінка</b></p>
     <p id="pg2"><b>Підготовка до ЗНО</b> </p>
-    <ul id="sublist">
-    </ul>
+    <p id="sub1" href="#">Математика</p>
+    <p id="sub2">Англійська мова</p>
     <p><i id="subs">Показати предмети</i> </p>
     <script type="text/javascript">
-      var a=document.createElement('li');
-      var b=document.createElement('li');
-      var sub1=document.createTextNode('Математика');
-      var sub2=document.createTextNode("Англійська мова");
       document.getElementById("subs").onclick= function (el){
-        if (document.getElementById("subs").innerHTML == "Показати предмети"){
-           a.appendChild(sub1);
-           document.getElementById("sublist").appendChild(a);
-           b.appendChild(sub2);
-           document.getElementById("sublist").appendChild(b);
-          document.getElementById("subs").innerHTML="Сховати предмети";
-        } else  if (document.getElementById("subs").innerHTML == "Сховати предмети"){
-          document.getElementById("sublist").removeChild(a);
-          document.getElementById("sublist").removeChild(b);
-          document.getElementById("subs").innerHTML="Показати предмети";
+        if (document.getElementById("sub1").style.height == "0 px"){
+          document.getElementById("sub1").style.height = "20 px";
+          document.getElementById("sub2").style.height = "20 px";
+        }
+        else{
+        document.getElementById("sub1").style.height = "0 px";
+        document.getElementById("sub2").style.height = "0 px";
         }
       }
     </script>
@@ -71,4 +64,3 @@ html{
   </script>
   </body>
 </html>
-
