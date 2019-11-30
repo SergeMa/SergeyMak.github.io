@@ -10,6 +10,18 @@
     <p id="sub1" href="#">Математика</p>
     <p id="sub2">Англійська мова</p>
     <p><i id="subs">Показати предмети</i> </p>
+    <script type="text/javascript">
+      document.getElementById("subs").onclick=function(el){
+        if(document.getElementById("sub1").font-size == "20px"){
+        document.getElementById("sub1").font-size = "0px";
+        document.getElementById("sub2").font-size = "0px"
+        }
+        else{
+        document.getElementById("sub1").font-size = "20px"
+        document.getElementById("sub2").font-size = "20px"
+        }
+      }
+      </script>
     <p a href="#" id="pg3"><b>Відео для більш детальної підготовки</b></p>
   </header>
   <body>
@@ -53,7 +65,7 @@ html{
   font-size: 20px;
 }
 #sub2{
-  font-size: 100px;
+  font-size: 20px;
 }
   </script>
   </body>
