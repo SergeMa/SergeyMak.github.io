@@ -14,11 +14,13 @@
       document.getElementById("subs").onclick = function(el){
         if(document.getElementById("sub1").style.fontSize == "20px"){
         document.getElementById("sub1").style.fontSize = "0px";
-        document.getElementById("sub2").style.fontSize = "0px"
+        document.getElementById("sub2").style.fontSize = "0px";
+        document.getElementById("subs").innerHTML = "Сховати предмети";
         }
         else{
-        document.getElementById("sub1").style.fontSize = "20px"
-        document.getElementById("sub2").style.fontSize = "20px"
+        document.getElementById("sub1").style.fontSize = "20px";
+        document.getElementById("sub2").style.fontSize = "20px";
+        document.getElementById("subs").innerHTML = "показати предмети";
         }
       }
       </script>
